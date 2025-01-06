@@ -1,0 +1,66 @@
+.infoClub{
+    background-image: linear-gradient(black, #886b01);
+    padding-top: 40px;
+    .container{
+        text-align: center;
+        h1{
+            font-size: 30px;
+            margin-bottom: 20px;
+           }
+    }
+  
+    &__peopleOfClub{
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+       p{
+        font-size: 25px;
+       }
+        
+       img{
+            width: 350px;
+            margin-right: 50px;
+            border-radius: 20px;
+            
+        }
+    }
+
+
+}
+
+@media (max-width: 640px) {
+    .infoClub{
+
+        h1{
+        margin: 0 auto ;
+        font-size: 30px;
+       } 
+        &__peopleOfClub{
+            flex-direction: column;
+            align-items: center;
+            
+            img{
+               margin: 15px auto;
+            }
+            
+        };
+
+    }
+
+}
+
+@media(max-width: 350px){
+    .infoClub{
+        padding-top: 0;
+
+        &__peopleOfClub{
+
+            img{
+                width: 90%
+            }
+        };
+    }
+} 
+
